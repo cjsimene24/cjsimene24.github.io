@@ -1130,3 +1130,287 @@ body {
     }
 
 }
+
+/* =========================
+   SELECTED CLIENT WORK
+========================= */
+
+.selected-work-section {
+    padding: 120px 0;
+
+    background: var(--surface);
+
+    border-top: 1px solid var(--border);
+}
+
+.selected-work-intro {
+    max-width: 520px;
+
+    margin-left: auto;
+    margin-bottom: 0;
+
+    color: var(--text-muted);
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CLIENT WORK CARDS
+========================= */
+
+.client-work-card {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    min-height: 355px;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--border);
+
+    border-radius: 16px;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.client-work-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(37, 99, 235, 0.3);
+
+    box-shadow:
+        0 20px 45px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =========================
+   CARD HEADER
+========================= */
+
+.client-work-top {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 28px;
+}
+
+.client-work-number {
+    color: #94a3b8;
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+}
+
+.work-role {
+    padding: 6px 10px;
+
+    border-radius: 50px;
+
+    font-size: 0.65rem;
+
+    font-weight: 650;
+}
+
+.role-primary {
+    color: #166534;
+
+    background: #f0fdf4;
+
+    border: 1px solid #dcfce7;
+}
+
+.role-collab {
+    color: #475569;
+
+    background: #f8fafc;
+
+    border: 1px solid var(--border);
+}
+
+
+/* =========================
+   CLIENT WORK CONTENT
+========================= */
+
+.client-work-type {
+    margin-bottom: 8px;
+
+    color: var(--primary);
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.07em;
+
+    text-transform: uppercase;
+}
+
+.client-work-card h3 {
+    margin-bottom: 14px;
+
+    font-size: 1.3rem;
+
+    font-weight: 700;
+
+    letter-spacing: -0.025em;
+}
+
+.client-work-card p {
+    margin-bottom: 20px;
+
+    color: var(--text-muted);
+
+    font-size: 0.88rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CLIENT WORK TECH
+========================= */
+
+.client-work-tech {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-bottom: 25px;
+}
+
+.client-work-tech span {
+    padding: 5px 8px;
+
+    color: #64748b;
+
+    background: #f8fafc;
+
+    border: 1px solid var(--border);
+
+    border-radius: 6px;
+
+    font-size: 0.66rem;
+
+    font-weight: 550;
+}
+
+
+/* =========================
+   CLIENT WORK LINK
+========================= */
+
+.client-work-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    width: fit-content;
+
+    margin-top: auto;
+
+    color: var(--text-dark);
+
+    text-decoration: none;
+
+    font-size: 0.82rem;
+
+    font-weight: 650;
+}
+
+.client-work-link i {
+    transition: transform 0.2s ease;
+}
+
+.client-work-link:hover {
+    color: var(--primary);
+}
+
+.client-work-link:hover i {
+    transform: translate(3px, -3px);
+}
+
+
+/* =========================
+   SELECTED WORK NOTE
+========================= */
+
+.selected-work-note {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    max-width: 720px;
+
+    margin: 45px auto 0;
+
+    color: var(--text-muted);
+
+    text-align: center;
+}
+
+.selected-work-note i {
+    margin-top: 2px;
+
+    color: var(--primary);
+}
+
+.selected-work-note p {
+    margin-bottom: 0;
+
+    font-size: 0.82rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .selected-work-section {
+        padding: 90px 0;
+    }
+
+    .selected-work-intro {
+        margin-left: 0;
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+    .selected-work-section {
+        padding: 75px 0;
+    }
+
+    .client-work-card {
+        min-height: auto;
+
+        padding: 25px;
+    }
+
+}
