@@ -1720,3 +1720,327 @@ body {
     }
 
 }
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    padding: 120px 0;
+
+    background: #ffffff;
+}
+
+.contact-wrapper {
+    padding: 70px;
+
+    color: #ffffff;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(59, 130, 246, 0.25),
+            transparent 35%
+        ),
+        #0f172a;
+
+    border-radius: 26px;
+
+    overflow: hidden;
+}
+
+.contact-label {
+    color: #60a5fa;
+}
+
+.contact-title {
+    max-width: 700px;
+
+    margin-bottom: 24px;
+
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: -0.055em;
+}
+
+.contact-description {
+    max-width: 650px;
+
+    margin-bottom: 0;
+
+    color: #94a3b8;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CONTACT BUTTONS
+========================= */
+
+.contact-actions {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.contact-main-btn,
+.contact-secondary-btn {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    width: 100%;
+
+    padding: 17px 19px;
+
+    text-decoration: none;
+
+    border-radius: 11px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.contact-main-btn {
+    justify-content: space-between;
+
+    color: #ffffff;
+
+    background: var(--primary);
+
+    font-size: 0.95rem;
+
+    font-weight: 650;
+}
+
+.contact-main-btn:hover {
+    color: #ffffff;
+
+    background: var(--primary-dark);
+
+    transform: translateY(-2px);
+}
+
+.contact-secondary-btn {
+    color: #cbd5e1;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    font-size: 0.88rem;
+
+    font-weight: 550;
+}
+
+.contact-secondary-btn:hover {
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    padding: 70px 0 30px;
+
+    background: #ffffff;
+}
+
+.footer-main {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding-bottom: 45px;
+}
+
+.footer-brand {
+    color: var(--text-dark);
+
+    text-decoration: none;
+
+    font-size: 1.6rem;
+
+    font-weight: 750;
+
+    letter-spacing: -0.05em;
+}
+
+.footer-brand span {
+    color: var(--primary);
+}
+
+.footer-description {
+    max-width: 300px;
+
+    margin-top: 13px;
+    margin-bottom: 0;
+
+    color: var(--text-muted);
+
+    font-size: 0.85rem;
+
+    line-height: 1.7;
+}
+
+.footer-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 26px;
+}
+
+.footer-links a {
+    color: #64748b;
+
+    text-decoration: none;
+
+    font-size: 0.83rem;
+
+    font-weight: 550;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
+.footer-bottom {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid var(--border);
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+
+    color: #94a3b8;
+
+    font-size: 0.75rem;
+}
+
+.footer-social {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.footer-social a {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    color: #64748b;
+
+    text-decoration: none;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.footer-social a:hover {
+    color: var(--primary);
+
+    border-color: rgba(37, 99, 235, 0.35);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   CONTACT RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .contact-section {
+        padding: 90px 0;
+    }
+
+    .contact-wrapper {
+        padding: 50px;
+    }
+
+    .footer-main {
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+    .contact-section {
+        padding: 75px 0;
+    }
+
+    .contact-wrapper {
+        padding: 35px 25px;
+
+        border-radius: 18px;
+    }
+
+    .contact-title {
+        font-size: 2.6rem;
+    }
+
+    .site-footer {
+        padding-top: 55px;
+    }
+
+    .footer-links {
+        gap: 15px 20px;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+}
